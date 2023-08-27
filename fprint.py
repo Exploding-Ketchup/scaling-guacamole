@@ -11,6 +11,7 @@ def fprint(str:str,
            ):
     
     print(f'\x1b[0;{"4;" if underline else ""}{"3;" if italic else ""}{"1;" if bold else ""}48;5;{background};38;5;{color}m'+str)
+    print('\x1b[0m')
 
 def unprint(
         num_lines:int
